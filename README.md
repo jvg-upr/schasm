@@ -18,24 +18,24 @@ chibi-scheme -I src/lib src/bin/schasmc.scm
 ```
 
 ## Architecture
-* src:
-  * bin:
-    * Programs and executables.
-  * lib:
-    * Modules and libraries.
-    * schasm:
-      * source-language:
-        * Input to the interpreter and compiler.
-      * intermediate-language:
-        * Internal representation of code in the interpreter and compiler.
-      * target-language:
-        * Output of the compiler.
-      * front-end:
-        * Translation from source-language to intermediate-language.
-      * middle-end:
-        * Improvement of intermediate-language.
-      * back-end:
-        * Translation from intermediate-language to target-language.
+- src:
+  - bin:
+    - Programs and executables.
+  - lib:
+    - Modules and libraries.
+    - schasm:
+      - source-language:
+        - Input to the interpreter and compiler.
+      - intermediate-language:
+        - Internal representation of code in the interpreter and compiler.
+      - target-language:
+        - Output of the compiler.
+      - front-end:
+        - Translation from source-language to intermediate-language.
+      - middle-end:
+        - Improvement of intermediate-language.
+      - back-end:
+        - Translation from intermediate-language to target-language.
 
 ## Example Input/Output
 
@@ -114,3 +114,8 @@ chibi-scheme -I src/lib src/bin/schasmc.scm
 
 (entry-point start 10 (vector start gcd gcd.L0 gcd.L1 gcd.L2 exit))
 ```
+
+## Contributing
+- [Scheme Formatting](http://community.schemewiki.org/?scheme-style)
+- [Scheme Naming](http://community.schemewiki.org/?variable-naming-convention)
+- [Scheme Commenting](http://community.schemewiki.org/?comment-style)
